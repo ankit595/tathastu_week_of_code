@@ -1,8 +1,7 @@
-N = 8
-
-for i in range(N):
-    for j in range(N):
-        if (i == j) or ((N - j -1) == i):
+N=int(input("Enter size: "))
+for i in range(0,N):
+    for j in range(0,N):
+        if (i == j) or (i+j==N-1):
             print('*', end = '')
         else:
             print(' ', end = '')
