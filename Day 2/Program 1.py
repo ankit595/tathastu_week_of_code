@@ -4,7 +4,7 @@ if n%2==0:
     print(n,"is Even number")
 else:
     print(n,"is Odd number")
-if n>1: 
+if n>1:
     for i in range(2,n):
         if n%i==0:
             print(n,"is not prime number")
@@ -15,20 +15,20 @@ else:
     print(n,"is not prime number")
 temp=n
 rev=0
-while(n>0):
-    dig=n%10
+while(temp>0):
+    dig=temp%10
     rev=rev*10+dig
-    n=n//10
+    temp//=10
 if(temp==rev):
     print("The number is a palindrome!")
 else:
-    print("The number isn't a palindrome!")    
+    print("The number isn't a palindrome!")
 sum = 0
-temp = n
-while temp > 0:
-   digit = temp % 10
+temp1 = n
+while temp1 > 0:
+   digit = temp1 % 10
    sum += digit ** 3
-   temp //= 10
+   temp1 //= 10
 if n == sum:
    print("The number is an Armstrong number")
 else:
